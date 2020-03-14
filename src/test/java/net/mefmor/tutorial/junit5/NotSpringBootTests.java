@@ -1,4 +1,4 @@
-package net.mefmor.tutorial.spring.boot.testing;
+package net.mefmor.tutorial.junit5;
 
 import org.junit.jupiter.api.Test;
 

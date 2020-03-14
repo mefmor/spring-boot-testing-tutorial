@@ -1,9 +1,8 @@
-package net.mefmor.tutorial.spring.boot.testing;
+package net.mefmor.tutorial.junit5;
 
 import org.junit.jupiter.api.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.test.context.event.annotation.BeforeTestClass;
 
 /**
  * The class demonstrates the sequence of launching test items.

@@ -1,8 +1,9 @@
 package net.mefmor.tutorial.spring.boot.testing;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.test.context.event.annotation.BeforeTestClass;
 
 /**
  * The class demonstrates the sequence of launching test items.
@@ -10,6 +11,26 @@ import org.slf4j.LoggerFactory;
  */
 class DefaultSequenceTests {
     private static final Logger LOGGER = LoggerFactory.getLogger(DefaultSequenceTests.class);
+
+    @BeforeAll
+    static void runBeforeAllTests() {
+        LOGGER.info("BEFORE ALL");
+    }
+
+    @BeforeEach
+    void runBeforeEach() {
+        LOGGER.info("BEFORE EACH");
+    }
+
+    @AfterAll
+    static void runAfterAllTests() {
+        LOGGER.info("AFTER ALL");
+    }
+
+    @AfterEach
+    void runAfterEach() {
+        LOGGER.info("AFTER EACH");
+    }
 
     @Test
     void firstTest() {

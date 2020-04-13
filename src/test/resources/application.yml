@@ -1,0 +1,5 @@
+test:
+  property:
+    string: String property value
+    array:
+      string: One, Two, Three

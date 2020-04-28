@@ -1,4 +1,4 @@
-package net.mefmor.tutorial.spring.boot.testing.database;
+package net.mefmor.tutorial.spring.boot.testing.database.jpa;
 
 import org.springframework.data.repository.CrudRepository;
 

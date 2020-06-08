@@ -18,13 +18,20 @@ class LoadStringFromResourcesTest {
     }
     
     static String asStringStatic(String pathToResource) throws IOException {
-        return FileCopyUtils.copyToString(new InputStreamReader(
-                LoadStringFromResourcesTest.class.getResourceAsStream(pathToResource)));
+        String s;
+        try (InputStreamReader r = new InputStreamReader(LoadStringFromResourcesTest.class.getResourceAsStream(pathToResource))) {
+            s = FileCopyUtils.copyToString(r);
+        }
+        return s;
     }
 
     @SneakyThrows
     private String asString(String pathToResource) {
-        return FileCopyUtils.copyToString(new InputStreamReader(this.getClass().getResourceAsStream(pathToResource)));
+        String s;
+        try (InputStreamReader r = new InputStreamReader(this.getClass().getResourceAsStream(pathToResource))) {
+            s = FileCopyUtils.copyToString(r);
+        }
+        return s;
     }
     
 }

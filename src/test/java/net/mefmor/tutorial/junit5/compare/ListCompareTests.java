@@ -1,4 +1,4 @@
-package net.mefmor.tutorial.junit5;
+package net.mefmor.tutorial.junit5.compare;
 
 import org.junit.jupiter.api.Test;
 

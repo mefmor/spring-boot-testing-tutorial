@@ -11,7 +11,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @WebMvcTest(HomeController.class)
-class HomeControllerTest {
+class WebMvcTests {
     @Test
     void testHomePage(@Autowired MockMvc mockMvc) throws Exception {
         mockMvc.perform(get("/"))

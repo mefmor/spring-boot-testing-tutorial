@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
-class HomePageBrowserTest {
+class HtmlUnitTests {
     private static HtmlUnitDriver browser;
 
     @BeforeAll
